@@ -13,4 +13,5 @@ My Solutions about Rustlings.
 - [x] if
 - [x] quiz1
 - [x] move_semantics
-- [ ] primitive_types
+- [x] primitive_types
+- [x] structs
