@@ -18,5 +18,7 @@ My Solutions about Rustlings.
 - [x] enums
 - [x] module
 - [x] collections
-- [ ] string
+- [x] string
+- [x] quiz2
+- [ ] error_handling
 
