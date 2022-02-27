@@ -15,3 +15,8 @@ My Solutions about Rustlings.
 - [x] move_semantics
 - [x] primitive_types
 - [x] structs
+- [x] enums
+- [x] module
+- [x] collections
+- [ ] string
+
