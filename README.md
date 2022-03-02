@@ -27,6 +27,10 @@ My Solutions about Rustlings.
 - [x] tests
 - [x] quiz3
 - [x] standard_library_types
-- [ ] threads
+- [x] threads
+- [x] macros
+- [x] quiz4
+- [ ] clippy
+- [ ] conversion
 
 
