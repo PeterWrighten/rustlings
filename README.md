@@ -20,5 +20,11 @@ My Solutions about Rustlings.
 - [x] collections
 - [x] string
 - [x] quiz2
-- [ ] error_handling
+- [x] error_handling
+- [x] generics
+- [x] option
+- [x] trait
+- [x] tests
+- [x] quiz3
+- [ ] standard_library_types
 
