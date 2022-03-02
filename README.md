@@ -30,7 +30,14 @@ My Solutions about Rustlings.
 - [x] threads
 - [x] macros
 - [x] quiz4
-- [ ] clippy
+- [x] clippy
 - [ ] conversion
+
+# Key Point
+
+1. Threads1
+2. Error handling6
+3. Iterator5
+
 
 
