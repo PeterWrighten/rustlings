@@ -26,5 +26,7 @@ My Solutions about Rustlings.
 - [x] trait
 - [x] tests
 - [x] quiz3
-- [ ] standard_library_types
+- [x] standard_library_types
+- [ ] threads
+
 
