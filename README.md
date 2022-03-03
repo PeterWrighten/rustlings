@@ -7,6 +7,8 @@ My Solutions about Rustlings.
 
 # Todo List
 
+**ALL DONE**
+
 - [x] intro
 - [x] variables
 - [x] function
@@ -31,13 +33,9 @@ My Solutions about Rustlings.
 - [x] macros
 - [x] quiz4
 - [x] clippy
-- [ ] conversion
+- [x] conversion
+- [x] advanced_errs
 
-# Key Point
-
-1. Threads1
-2. Error handling6
-3. Iterator5
 
 
 

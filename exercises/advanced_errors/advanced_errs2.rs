@@ -16,7 +16,7 @@
 // 4. Complete the partial implementation of `Display` for
 //    `ParseClimateError`.
 
-// I AM NOT DONE
+
 
 use std::error::Error;
 use std::fmt::{self, Display, Formatter};
@@ -47,6 +47,7 @@ impl From<ParseIntError> for ParseClimateError {
 impl From<ParseFloatError> for ParseClimateError {
     fn from(e: ParseFloatError) -> Self {
         // TODO: Complete this function
+        Self::ParseFloat(e)
     }
 }
 
@@ -64,6 +65,9 @@ impl Display for ParseClimateError {
         match self {
             NoCity => write!(f, "no city name"),
             ParseFloat(e) => write!(f, "error parsing temperature: {}", e),
+            Empty => write!(f, "empty input"),
+            ParseInt(e) => write!(f, "error parsing year: {}", e),
+            BadLen => write!(f, "incorrect number of fields"),
         }
     }
 }
@@ -73,6 +77,10 @@ struct Climate {
     city: String,
     year: u32,
     temp: f32,
+}
+
+impl Error for ParseClimateError {
+
 }
 
 // Parser for `Climate`.
@@ -90,7 +98,9 @@ impl FromStr for Climate {
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         let v: Vec<_> = s.split(',').collect();
         let (city, year, temp) = match &v[..] {
-            [city, year, temp] => (city.to_string(), year, temp),
+            [city, year, temp] if !city.is_empty() => (city.to_string(), year, temp),
+            [_, year, temo] => return Err(ParseClimateError::NoCity),
+            v if v[0].is_empty() => return Err(ParseClimateError::Empty),
             _ => return Err(ParseClimateError::BadLen),
         };
         let year: u32 = year.parse()?;
